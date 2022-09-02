@@ -1,0 +1,140 @@
+//Common CSS
+$primary-color: #2E7BE6;
+.primary-clr {color: $primary-color;}
+.bg-primary {background: $primary-color;}
+.bold {font-weight: bold;}
+.m-0 {margin: 0;}
+.mt-4{margin-top: 0.5rem;}
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    .thead-dark th {
+        color: #fff;
+        background-color: $primary-color;
+        border-color: darken($primary-color, 10%);
+    }
+    thead th {
+        vertical-align: bottom;
+        border-bottom: 2px solid #dee2e6;
+    }
+    td, th {
+        padding: 0.75rem;
+        vertical-align: top;
+        border-top: 1px solid #dee2e6;
+    }
+}
+
+.table-borderless {
+    tbody+tbody,
+    td, th,
+    thead th {
+        border: 0;
+    }
+}
+//END Common CSS
+
+
+
+.topActionBtn {
+    display: flex;
+    justify-content: space-between;
+    p {
+        margin: 0;
+        color: $primary-color;
+        img {
+            max-height: 14px;
+            margin-right: 4px;
+        }
+    }
+}
+
+.cusTable {
+    display: table;
+    color: #000;
+    div {
+        display: table-row;
+        div{
+            display: table-cell;
+            padding-bottom: 14px;
+            padding-right: 20px;
+            font-weight: 600;
+            &:first-child {
+                  
+                color: #7E808F;       
+             }
+        }
+    }
+}
+
+.InvoiceLogo {
+    margin-top: 20px;
+}
+.billedTo {
+    background: #F4F8F9;
+    border-radius: 4px;
+    padding: 24px 30px; 
+    span {
+        font-weight: 600;
+        color: #000;
+    }
+}
+
+.overviewTable {
+    margin-top: 40px;
+    margin-bottom: 60px;
+    border-radius: 4px;
+    overflow: hidden;
+    tbody {
+        background: #F4F8F9EB;
+    }
+}
+.paymentDetailTable td {
+    padding: 4px;
+}
+.paymentDetailTable td:first-child {
+    color: #7E808F;
+    padding-left: 0;
+}
+.invoiceDetailsTable {
+    letter-spacing: 0.298507px;
+    color: #535669;
+    font-weight: 700;
+    font-size: 15.8507px;
+    line-height: 30px;
+    .price{
+        font-size: 23px;
+        line-height: 34px;
+    }
+}
+.amountInword {
+    max-width: 90%;
+    p{
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 0.298507px;
+        color: #7E808F;
+    }
+    h3{
+    max-width: 90%;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 0.298507px;
+    color: #535669;
+    }
+}
+.TermsConditions {
+    margin-top: 30px;
+    ol{
+        padding-left: 14px;
+        margin-top: 10px;
+        li{
+            line-height: 2;
+        }
+    }
+}
+.AdditionalNotes {
+    margin-top: 20px;
+}

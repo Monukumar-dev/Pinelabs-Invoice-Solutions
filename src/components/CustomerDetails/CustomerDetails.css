@@ -1,0 +1,54 @@
+.cusLabelInline {
+    margin-right: 14px;
+    display: inline-block;
+}
+.AddBusinessLogo {
+    background: #F7F9FE !important;
+    border: 1px dashed #A0A4A8 !important;
+    border-radius: 8px !important;
+}
+
+.AddBusinessLogo span:last-child {
+    color: #2E7BE6;
+    font-weight: 700;
+}
+.AddBusinessLogo + .info {
+    position: relative;
+    background: #FFFFFF;
+    border: 1px solid #E9EBF6;
+    line-height: 1.2;
+    padding: 10px;
+    max-width: 80%;
+    margin-top: 20px;
+}
+
+.AddBusinessLogo + .info:before {
+    content: "";
+    position: absolute;
+    left: 30px;
+    top: -14px;
+    width: 0;
+    height: 0;
+    border-bottom: 13px solid #E9EBF6;
+    border-right: 13px solid transparent;
+    border-left: 13px solid transparent;
+ }
+ .ant-form-item-label>label.ant-form-item-required:not(.ant-form-item-required-mark-optional):before {
+    display: none !important;
+}
+ .ant-form-item-label>label.ant-form-item-required:not(.ant-form-item-required-mark-optional):after {
+    display: inline-block;
+    margin-right: 4px;
+    color: #ff4d4f;
+    font-size: 14px;
+    font-family: SimSun,sans-serif;
+    line-height: 1;
+    content: "*";
+}
+.ant-picker {
+    width: 100%;
+}
+.ant-tooltip-inner {
+    color: #000 !important;
+    text-align: center !important;
+}
